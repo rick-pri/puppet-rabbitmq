@@ -29,7 +29,7 @@ class Puppet::Provider::RabbitmqCli < Puppet::Provider
     end
   end
 
-  home_tmp_command :rabbitmqctl, 'rabbitmqctl'
+  home_tmp_command :rabbitmqctl, 'LC_ALL="en_GB.UTF-8" rabbitmqctl'
   home_tmp_command :rabbitmqplugins, 'rabbitmq-plugins'
 
   home_tmp_command :rabbitmqadmin, '/usr/local/bin/rabbitmqadmin'
